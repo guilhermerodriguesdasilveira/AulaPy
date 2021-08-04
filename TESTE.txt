@@ -1,0 +1,25 @@
+Euclidiana
+
+from math import dist
+
+x = ( 15 , 118 , 330 )
+y = ( 4, 56 , 23230 )
+
+carro1 = dist(x, y)
+print(carro1)
+
+
+
+
+#Hamming
+a='banheira'
+b='torneira'
+
+def hamming(a, b):
+    total = 0
+    for i in range(len(a)):
+        if a[i] != b[i]:
+            total+=1
+    return total
+
+print( hamming(a, b) )
